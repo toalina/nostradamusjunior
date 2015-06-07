@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custom CSS Stylesheet -->
+	<link rel="stylesheet" href="main.css" type="text/css">
+  <!-- Slimbox2 CSS -->
+	<link rel="stylesheet" href="slimbox/slimbox2.css" type="text/css" media="screen" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <!-- Slimbox2 JS -->
+  <script type="text/javascript" src="slimbox/slimbox2.js"></script>
+
+	<title>Nostradamus Junior - Artist</title>
+</head>
+
+<body>
+
+<header>
+
+<!-- Nav Menu -->
+<div class="nav">
+	<div class="container">
+		<a href="#top" class="logo"><img id="img" src="images/ndjr_small.jpg"></a>
+
+		<ul class="pull-right">
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#info">About</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- Logo -->
+<div class="jumbotron" id="top">
+	<div class="container">
+		<h1>NOSTRADAMUS JUNIOR</h1>
+		<p>Adam MacKinnon. Mixed media. Music.</p>
+	</div>
+</div>
+</header>
+
+
+<div class="gallery" id="gallery">
+	<div class="container">
+		<h2>Gallery</h2>
+		<h5>Click on image to enlarge. Visit Nostradamus Junior's <a href="http://www.brooklynartproject.com/profile/MassRad?xg_source=profiles_memberList" target="_blank">Brooklyn Art Project</a> page for more images.</h5>
+		<a href="images/guitarsolo.jpg" rel="lightbox-ndjr" title="Guitar Solo"><img src="images/guitarsolo_thumb.jpg"></a>
+		<a href="images/ndjr1.jpg" rel="lightbox-ndjr" title="Nostradamus Junior"><img src="images/ndjr1_thumb.jpg"></a>
+		<a href="images/squatchmeetsdog.jpg" rel="lightbox-ndjr" title="Squatch Meets Dog"><img src="images/squatchmeetsdog_thumb.jpg"></a>
+		<a href="images/ndjr2.jpg" rel="lightbox-ndjr" title="Tornado Leaf Raker"><img src="images/ndjr2_thumb.jpg"></a>
+		<a href="images/ndjr3.jpg" rel="lightbox-ndjr" title="SBach"><img src="images/ndjr3_thumb.jpg"></a>
+		<a href="images/ndjr4.jpg" rel="lightbox-ndjr" title="Pacific Western"><img src="images/ndjr4_thumb.jpg"></a>
+		<a href="images/pterodactylsunset.jpg" rel="lightbox-ndjr" title="Pterodactyl Sunset"><img src="images/pterodactylsunset_thumb.jpg"></a>
+		<a href="images/rollingofthebulls.jpg" rel="lightbox-ndjr" title="Rolling of the Bulls"><img src="images/rollingofthebulls_thumb.jpg"></a>
+		<a href="images/workinprogress.jpg" rel="lightbox-ndjr" title="Work in Progress"><img src="images/workinprogress_thumb.jpg"></a>
+	</div>
+</div>
+
+
+
+<div class="info" id="info">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Current Shows</h2>
+			<p>Stay tuned.</p>
+			<p>Selected pieces for sale. Contact artist for more information.</p>
+		</div>
+
+		<div class="col-md-4">
+			<h2>About</h2>
+			<p>Nostradamus Junior is a Seattle-based mixed media artist and musician. You can learn more about his musical project Digital Dracula <a href="http://digitaldracula.bandcamp.com/" target="_blank">here</a>.</p>
+		</div>
+
+		<div class="col-md-4">
+			<h2>Contact</h2>
+			<p>Adam MacKinnon</p>
+			<p><a href="mailto:adam@barsuk.com?Subject=Hello%20" target="_top">Say hello!</a></p>
+			<ul>
+			<li><a href="https://www.facebook.com/nostradamus.junior.3" target="_blank"><img src="images/batch_facebookicon.png"></a></li>
+			<li><a href="http://instagram.com/junior_nostradamus" target="_blank"><img src="images/batch_instagramicon.png"></a></li>
+			<li><a href="https://www.youtube.com/channel/UCgj9DhMctReV2HqM6Bvc4rA" target="_blank"><img src="images/batch_youtubeicon.png"></a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<footer>
+<div class="footer">
+	<div class="container">
+		<h5>Copyright 2014-2015 <a href="http://www.nostradamusjunior.com">Nostradamus Junior</a> * Website by <a href="http://www.helloalinato.com" target="_blank">Alina To</a></h5>
+	</div>
+</div>
+</footer>
+
+<script type="text/javascript">
+	$(function() {
+  $('a[href*=#gallery]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+	$(function() {
+  $('a[href*=#info]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+		$(function() {
+  $('a[href*=#top]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+</script>
+
+
+
+
+</body>
+
+
+
